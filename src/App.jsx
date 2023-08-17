@@ -1,9 +1,9 @@
 import React from 'react'
 import { Nav } from '@components/common/Nav/Index'
 
-import { HomeSection } from '@/components/Sections/Home/Index2'
+import { HomeSection } from '@/components/sections/Home/Index2'
 
-import { ServicesSection } from '@/components/Sections/ServiceC/Index'
+import { ServicesSection } from '@/components/sections/ServiceC/Index'
 import { Lines } from '@components/Background/Lines'
 import { Footer } from '@/components/Sections/Footer/Index'
 import { Resource } from '@/components/sections/Resource/Index'

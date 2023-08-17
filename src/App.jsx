@@ -5,7 +5,7 @@ import { HomeSection } from '@/components/sections/Home/Index2'
 
 import { ServicesSection } from '@/components/sections/ServiceC/Index'
 import { Lines } from '@components/Background/Lines'
-import { Footer } from '@/components/Sections/Footer/Index'
+import { Footer } from '@/components/sections/Footer/Index'
 import { Resource } from '@/components/sections/Resource/Index'
 import { DownUpBtn } from '@/components/DownUpBtn/Index'
 import { WhySection } from '@/components/sections/Why/Index'

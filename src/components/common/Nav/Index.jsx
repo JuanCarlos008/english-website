@@ -51,7 +51,7 @@ export const Nav = () => {
 			<MaxContainer>
 				<div className='nav'>
 					<a href='#inicio' className='nav__brand'>
-						<p>youCan-EN</p>
+						<p>youCan-GLISH</p>
 						<span>.</span>
 					</a>
 					<nav

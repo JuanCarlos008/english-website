@@ -17,10 +17,6 @@ const navPaths = [
 		path: '#resources',
 		name: 'resources',
 	},
-	{
-		path: '#testimonials',
-		name: 'testimonials',
-	},
 ]
 
 export const Nav = () => {

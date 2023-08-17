@@ -1,0 +1,134 @@
+:root {
+	/* fonts */
+	--fontCodeLatin: CodeLatin, sans-serif;
+	--fontQuickSand: Quicksand, sans-serif;
+	--fontNextDoor: NextDoor, cursive, sans-serif;
+
+	/* font size */
+	--p-font-size: clamp(12.8px, 2vw, 16px);
+	--p-font-size-small: clamp(9.6px, 2vw, 12.8px);
+	--title-font-size: clamp(28.8px, 2vw, 32px);
+	--title-font-size-small: clamp(19.2px, 2vw, 24px);
+	--title-section-font-size: clamp(40px, 3vw, 64px);
+
+	--placeholder-text-color: #636363;
+	--permanent-text-color: #f1f6f9;
+
+	/* colors */
+	/* --primary-color: #000000;
+	--secondary-color: #e0fcff;
+	--tertiary-color: #12cad6;
+	--quertiary-color: #65eeb7;
+
+	--primary-text-color: #e0fcff;
+	--secondary-text-color: #12cad6;
+	--tertiary-text-color: #000000;
+	--quertiary-text-color: #65eeb7; */
+
+	/* green and red */
+
+	/* --primary-color: #000000;
+	--secondary-color: #e0fcff;
+	--tertiary-color: #2ec1ac;
+	--quertiary-color: #af0404;
+
+	--primary-text-color: #e0fcff;
+	--secondary-text-color: #2ec1ac;
+	--tertiary-text-color: #000000;
+	--quertiary-text-color: #af0404; */
+
+	/* Blue and purple */
+
+	/* --primary-color: #000000;
+	--secondary-color: #e0fcff;
+	--tertiary-color: #74deed;
+	--quertiary-color: #5f85db;
+
+	--primary-text-color: #e0fcff;
+	--secondary-text-color: #74deed;
+	--tertiary-text-color: #000000;
+	--quertiary-text-color: #5f85db; */
+
+	/* orange and blue */
+
+	/* --primary-color: #000000;
+	--secondary-color: #e0fcff;
+	--tertiary-color: #34b3f1;
+	--quertiary-color: #f15412;
+
+	--primary-text-color: #e0fcff;
+	--secondary-text-color: #34b3f1;
+	--tertiary-text-color: #000000;
+	--quertiary-text-color: #f15412; */
+
+	/* ---------------------------------------------------------------- */
+
+	/* --primary-color: #12111b;
+	--secondary-color: #f1f6f9;
+	--tertiary-color: #ae8cfa;
+	--quertiary-color: #746cfe;
+
+	--primary-text-color: #f1f6f9;
+	--secondary-text-color: #ae8cfa;
+	--tertiary-text-color: #12111b;
+	--quertiary-text-color: #746cfe; */
+
+	/* --primary-color: #000000;
+	--secondary-color: #f1f6f9;
+	--tertiary-color: #14b8a6;
+	--quertiary-color: #3b82f6;
+
+	--primary-text-color: #f1f6f9;
+	--secondary-text-color: #14b8a6;
+	--tertiary-text-color: #000000;
+	--quertiary-text-color: #3b82f6; */
+
+	/* 	--primary-color: #f1f6f9;
+	--secondary-color: #12111b;
+	--tertiary-color: #14b8a6;
+	--quertiary-color: #3b82f6;
+
+	--primary-text-color: #000000;
+	--secondary-text-color: #14b8a6;
+	--tertiary-text-color: #f1f6f9;
+	--quertiary-text-color: #3b82f6; */
+
+	/* --primary-color: #f1f6f9;
+	--secondary-color: #12111b;
+	--tertiary-color: #ae8cfa;
+	--quertiary-color: #746cfe;
+
+	--primary-text-color: #000000;
+	--secondary-text-color: #ae8cfa;
+	--tertiary-text-color: #f1f6f9;
+	--quertiary-text-color: #746cfe; */
+
+	--primary-color: #161122;
+	--secondary-color: #f5f5f5;
+	--tertiary-color: #f0592e;
+	--quertiary-color: #477de7;
+
+	--primary-text-color: #ffffff;
+	--secondary-text-color: #f0592e;
+	--tertiary-text-color: #161122;
+	--quertiary-text-color: #9d9ea1;
+	--quintary-text-color: #477de7;
+
+	--p-font-size: clamp(0.8rem, 2vw, 1rem);
+	--p-font-size-small: clamp(0.6rem, 2vw, 0.8rem);
+	--title-font-size: clamp(1.8rem, 2vw, 2rem);
+	--title-font-size-small: clamp(1.2rem, 2vw, 1.5rem);
+	--title-section-font-size: clamp(2.5rem, 3vw, 4rem);
+
+	--placeholder-text-color: #636363;
+	--permanent-text-color: #f1f6f9;
+
+	/* --primary-color: #12111b;
+	--secondary-color: #f1f6f9;
+	--tertiary-color: #ae8cfa;
+	--quertiary-color: #746cfe;
+
+	--primary-text-color: #f1f6f9;
+	--secondary-text-color: #ae8cfa;
+	--tertiary-text-color: #12111b; */
+}

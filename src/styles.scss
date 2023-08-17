@@ -1,0 +1,8 @@
+/* abstracts */
+@use "./scss/abstracts/variables";
+@use "./scss/abstracts/mixin";
+@use "./scss/abstracts/fonts";
+
+/* base */
+@use "./scss/base/base";
+@use "./scss/base/reset";

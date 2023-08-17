@@ -1,0 +1,111 @@
+.roadmap {
+	min-width: 300px;
+	max-width: 600px;
+	width: min(600px, 100%);
+	margin: auto;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	.roadmap__wrapper {
+		margin-top: 100px;
+		.step {
+			font-size: 1em;
+			line-height: 1.75em;
+			border-top: 3px solid;
+			border-image: linear-gradient(
+				to right,
+				var(--tertiary-color) 0%,
+				var(--quertiary-color) 100%
+			);
+			border-image-slice: 1;
+			border-width: 3px;
+			margin: 0;
+			padding: 40px;
+			counter-increment: section;
+			position: relative;
+			color: #ffffff;
+
+			//numbers
+			&:before {
+				content: counter(section);
+				position: absolute;
+				border-radius: 50%;
+				padding: 10px;
+				height: 1.25rem;
+				width: 1.25em;
+				background-color: var(--secondary-color);
+				text-align: center;
+				line-height: 1.25rem;
+				color: var(--tertiary-text-color);
+				font-size: var(--p-font-size);
+				font-weight: bold;
+				border: 5px solid var(--primary-color);
+			}
+
+			//odd number borders
+			&:nth-child(odd) {
+				border-right: 3px solid;
+				padding-left: 0;
+
+				&:before {
+					left: 100%;
+					margin-left: -20px;
+				}
+			}
+			//even number borders
+			&:nth-child(even) {
+				border-left: 3px solid;
+				padding-right: 0;
+
+				&:before {
+					right: 100%;
+					margin-right: -20px;
+				}
+			}
+			//handle first and last
+			&:first-child {
+				border-top: 0;
+				border-top-right-radius: 0;
+				border-top-left-radius: 0;
+			}
+			&:last-child {
+				border-bottom-right-radius: 0;
+				border-bottom-left-radius: 0;
+			}
+
+			.level {
+				font-size: var(--title-font-size);
+				font-weight: bold;
+				color: var(--secondary-text-color);
+			}
+
+			.step__wrapper {
+				margin-top: 30px;
+				padding: 10px;
+				border: 1px solid transparent;
+				transition: all 0.3s ease;
+				&:hover {
+					border: 1px solid var(--quertiary-color);
+					scale: 1.1;
+				}
+				.topic-title {
+					font-size: var(--title-font-size-small);
+					font-weight: bold;
+					color: var(--quintary-text-color);
+				}
+
+				.task-list {
+					margin-top: 10px;
+					margin-bottom: 10px;
+					margin-left: 20px;
+					li {
+						list-style: circle;
+						margin-left: 20px;
+					}
+				}
+			}
+		}
+	}
+}

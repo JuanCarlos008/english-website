@@ -1,0 +1,71 @@
+.blur-circler,
+.lines-wrapper {
+	position: relative;
+	width: 100%;
+	height: 100%;
+
+	.floating-elements {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		pointer-events: none;
+
+		.circle {
+			position: absolute;
+			border-radius: 50%;
+			filter: blur(250px);
+			width: clamp(180px, 60vw, 420px);
+			height: clamp(180px, 60vw, 420px);
+			z-index: 0;
+
+			&--1 {
+				top: -10%;
+				left: -10%;
+				background-color: var(--tertiary-color);
+			}
+			&--2 {
+				right: -10%;
+				bottom: -10%;
+				background-color: var(--quertiary-color);
+			}
+		}
+
+		.floating-line {
+			position: absolute;
+			width: clamp(180px, 45vw, 620px);
+			height: clamp(180px, 45vw, 620px);
+			&--1 {
+				top: 0;
+				left: -20%;
+			}
+			&--2 {
+				right: -20%;
+				bottom: -20%;
+			}
+		}
+
+		@media screen and (max-width: 768px) {
+			.circle {
+				&--1 {
+					top: -20%;
+					left: -20%;
+				}
+				&--2 {
+					right: -20%;
+					bottom: -20%;
+				}
+			}
+		}
+
+		@media screen and (max-width: 480px) {
+			.floating-line {
+				&--1,
+				&--2 {
+					display: none;
+				}
+			}
+		}
+	}
+}

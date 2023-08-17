@@ -1,0 +1,31 @@
+.skills {
+	scroll-margin-top: 100px;
+	&__wrapper {
+		width: 100%;
+		min-height: 500px;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		gap: 50px;
+	}
+
+	&__info {
+		width: 100%;
+		columns: 350px 2;
+		margin-bottom: 50px;
+		font-size: var(--p-font-size);
+	}
+
+	&-cards-wrapper {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+		justify-items: center;
+		gap: 80px;
+
+		@media screen and (max-width: 768px) {
+			grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+			// place-items: center;
+			gap: 20px;
+		}
+	}
+}

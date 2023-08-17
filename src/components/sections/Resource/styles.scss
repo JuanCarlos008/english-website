@@ -1,0 +1,19 @@
+.project {
+	&__wrapper {
+		width: 100%;
+		min-height: 500px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 50px;
+	}
+	&__cards-wrapper {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		justify-items: center;
+		gap: 50px;
+		@media screen and (max-width: 768px) {
+			justify-content: center;
+		}
+	}
+}

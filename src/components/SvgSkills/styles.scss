@@ -1,0 +1,40 @@
+.skill-icon {
+	width: clamp(70px, 10vw, 100px);
+	height: clamp(70px, 10vw, 100px);
+	transition: all ease 0.3s;
+
+	stop {
+		/* &:nth-child(1) {
+			stop-color: var(--secondary-color);
+			stop-opacity: 1;
+		}
+		&:nth-child(2) {
+			stop-color: var(--secondary-color);
+			stop-opacity: 1;
+		} */
+
+		&:nth-child(1) {
+			stop-color: var(--tertiary-color);
+			stop-opacity: 1;
+		}
+		&:nth-child(2) {
+			stop-color: var(--quertiary-color);
+			stop-opacity: 1;
+		}
+
+		transition: all 0.3s ease;
+	}
+
+	&:hover {
+		stop {
+			&:nth-child(1) {
+				stop-color: var(--quertiary-color);
+				stop-opacity: 1;
+			}
+			&:nth-child(2) {
+				stop-color: var(--tertiary-color);
+				stop-opacity: 1;
+			}
+		}
+	}
+}

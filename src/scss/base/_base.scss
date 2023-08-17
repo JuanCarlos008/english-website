@@ -1,0 +1,116 @@
+* {
+	box-sizing: border-box;
+}
+
+/* Works on Firefox */
+* {
+	scrollbar-width: thin;
+	scrollbar-color: var(--secondary-color);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+	width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+	background: var(--quintary-text-color);
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: var(--secondary-color);
+	border-radius: 20px;
+	border: 1px solid orange;
+}
+
+html {
+	overflow-x: hidden;
+}
+
+body {
+	position: relative;
+	font-family: var(--fontQuickSand);
+	color: var(--primary-text-color);
+	background-color: var(--primary-color);
+	font-size: 16px;
+	box-sizing: border-box;
+	scroll-behavior: smooth !important;
+
+	background: linear-gradient(
+				90deg,
+				var(--primary-color) (22px - 1px),
+				transparent 100%
+			)
+			center,
+		linear-gradient(var(--primary-color) (22px - 1px), transparent 100%) center,
+		var(--secondary-color);
+	background-size: 22px 22px;
+
+	overflow-x: hidden;
+}
+
+.app-wrapper {
+	position: relative;
+}
+
+.disabled {
+	opacity: 0.5;
+	&:hover {
+		transform: none;
+		cursor: not-allowed;
+	}
+}
+
+.section {
+	position: relative;
+	min-height: 1px;
+	width: 100%;
+	margin-bottom: 250px;
+	.section-title {
+		display: inline-block;
+		position: relative;
+		font-family: var(--fontCodeLatin);
+		font-size: var(--title-section-font-size);
+		width: max-content;
+		color: var(--primary-text-color);
+		margin-bottom: 50px;
+
+		/* background: -webkit-linear-gradient(
+			-45deg,
+			var(--quertiary-text-color),
+			var(--secondary-text-color),
+			var(--primary-text-color)
+		);
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent; */
+
+		&::before,
+		&::after {
+			position: absolute;
+			content: '';
+			width: 100%;
+			bottom: -10px;
+			left: 0;
+			height: 2px;
+			background-color: var(--secondary-color);
+		}
+		&::after {
+			background-color: var(--quertiary-color);
+			width: 100%;
+			background: linear-gradient(
+				90deg,
+				var(--secondary-text-color),
+				var(--quertiary-text-color),
+				var(--primary-text-color)
+			);
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		margin-bottom: 100px;
+		.section-title {
+			margin-bottom: 30px;
+		}
+	}
+}

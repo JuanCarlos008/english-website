@@ -1,0 +1,42 @@
+.menu-toggle {
+	/* position: fixed;
+	top: 35px;
+	right: 30px; */
+	z-index: 6;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.hamburger {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		gap: 6px;
+		span {
+			width: 30px;
+			height: 2px;
+			background-color: var(--tertiary-color);
+			display: block;
+			transition: all 0.3s ease;
+			border-radius: 2px;
+		}
+
+		&.isActive {
+			span:nth-child(1) {
+				transform: rotate(45deg) translateY(12px);
+			}
+			span:nth-child(2) {
+				transform: translate(100%);
+				opacity: 0;
+			}
+			span:nth-child(3) {
+				transform: rotate(-45deg) translateY(-12px);
+			}
+		}
+	}
+
+	@media screen and (min-width: 768px) {
+		display: none;
+	}
+}

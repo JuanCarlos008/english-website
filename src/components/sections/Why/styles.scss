@@ -28,6 +28,12 @@
 
 				h3 {
 					margin-bottom: 5px;
+
+					.icon {
+						font-size: var(--title-font-size-small);
+						margin-right: 10px;
+						color: var(--quintary-text-color);
+					}
 				}
 			}
 		}

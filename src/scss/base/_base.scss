@@ -1,5 +1,6 @@
 * {
 	box-sizing: border-box;
+	scroll-behavior: smooth !important;
 }
 
 /* Works on Firefox */
@@ -25,6 +26,7 @@
 
 html {
 	overflow-x: hidden;
+	scroll-behavior: smooth !important;
 }
 
 body {
@@ -34,7 +36,7 @@ body {
 	background-color: var(--primary-color);
 	font-size: 16px;
 	box-sizing: border-box;
-	scroll-behavior: smooth !important;
+	scroll-behavior: smooth;
 
 	background: linear-gradient(
 				90deg,
@@ -68,7 +70,7 @@ body {
 	width: 100%;
 	margin-bottom: 250px;
 	.section-title {
-		display: inline-block;
+		// display: inline-block;
 		position: relative;
 		font-family: var(--fontCodeLatin);
 		font-size: var(--title-section-font-size);
